@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Confeitaria Doce Encanto</title>
+            <style>
+            body{
+                background-color:#FFF0F5;
+                text-align:center;
+            }
+            h1{
+                color:#D85A8B;
+                text-align:center;
+                
+            }
+            img{
+                  width:300px;
+                  height:300px;
+                  object-fit:cover;
+                  border-radius:10px;
+                  display:block;
+                  margin:0 auto
+           }
+            </style>
+           
+          <body>
+              <h1>CONFEITARIA DOCE ENCANTO </h1>
+
+              <p>transformando doces em momentos inesqueciveis  </p>
+
+              <p>Na nossa confeitaria acreditamos que cada momento merece um sabor especial.
+                 produzimos doces e salgados , preparados com muito carinho e amor
+                e ingredientes de qualidade. nosso objetivo e transformar cada momento 
+                em uma memoria inesquecivel.
+              </p>
+
+              <p>conheca algumas de nossas delicias ,preparados com ingedientes selecionados
+                e muito carinho especial.</p>
+
+              <img src="brigadeiros.jpg" alt="brigadeiros" width="300">
+
+              <button> 💗<span>500</span></button>
+
+              <h2>NOSSOS PRODUTOS</h2>
+
+              <P>
+                 -brigadeiros gourmet<br>
+                 -cupcakes <br>
+                 -bolos personalizados<br>
+                 -doces para festas <br>
+                 -lembrancinhas<br>
+              </P>
+
+              <h2>CONTATOS</h2>
+
+              <P>
+                whatsapp:(00)000-00
+                email:doceencanto@gmail.com
+              </p>
+
+              <p>FACA JA SEU PEDIDO</p>
+
+
+
+          </body>
+          <script>
+            const botoes = document.querySelectorAll("button")
+
+         botoes.forEach(function(botao){
+            botao.addEventListener("click",botaoClicado )
+            console.log ("fui clicado")
+            let texto = botao.querySelector("span")
+            texto.textContent++
+
+            })
+          </script>
+          </html>
+            
+
+            
+        
